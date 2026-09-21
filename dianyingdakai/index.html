@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影大开眼戒 - 经典剧情解析与深度影评</title>
+    <meta name="description" content="深度解析电影大开眼戒的剧情、导演风格、象征符号及观看指南。探讨尼古拉斯·凯奇与汤姆·克鲁斯的经典合作，分析斯坦利·库布里克对欲望与婚姻的隐喻表达。">
+    <meta name="keywords" content="电影大开眼戒, 开大眼戒影评, 斯坦利库布里克, 尼古拉斯凯奇, 汤姆克鲁斯, 玛丽昂歌迪亚, 电影解析">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #d4af37;
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/eyeswideopen/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b5952f;
+        }
+
+        /* Synopsis Section */
+        .synopsis {
+            padding: 4rem 0;
+        }
+
+        .synopsis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .synopsis-text h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .synopsis-text p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        .synopsis-img {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Cast Section */
+        .cast-section {
+            background-color: var(--card-bg);
+            padding: 4rem 0;
+        }
+
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .cast-card {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .cast-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cast-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+
+        .cast-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .cast-role {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Analysis Section */
+        .analysis {
+            padding: 4rem 0;
+        }
+
+        .analysis-list {
+            list-style: none;
+        }
+
+        .analysis-item {
+            background: var(--card-bg);
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .analysis-item {
+                flex-direction: row;
+            }
+        }
+
+        .analysis-icon {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 2rem;
+            flex-shrink: 0;
+            width: 100px;
+        }
+
+        @media (min-width: 768px) {
+            .analysis-icon {
+                width: auto;
+            }
+        }
+
+        .analysis-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .analysis-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .analysis-content p {
+            color: var(--text-secondary);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--card-bg);
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content p {
+            color: #999;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .synopsis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">影<span>视</span>解析</a>
+            <nav>
+                <ul>
+                    <li><a href="#intro">剧情简介</a></li>
+                    <li><a href="#cast">主演阵容</a></li>
+                    <li><a href="#analysis">深度解析</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>电影大开眼戒</h1>
+                <p>斯坦利·库布里克遗作。在欲望与背叛的边缘，探索婚姻的脆弱与人性的深渊。尼古拉斯·凯奇与汤姆·克鲁斯联袂演绎的惊世之作。</p>
+                <a href="#intro" class="btn">开始阅读</a>
+            </div>
+        </section>
+
+        <section id="intro" class="synopsis container">
+            <div class="synopsis-grid">
+                <div class="synopsis-text">
+                    <h2>剧情梗概</h2>
+                    <p>《大开眼戒》改编自亚瑟·施尼茨勒的中篇小说《梦幻之路》，由传奇导演斯坦利·库布里克执导，于1999年上映。影片讲述了已婚多年的好莱坞著名医生威廉·哈特ford（汤姆·克鲁斯 饰）在参加一位富豪朋友的婚礼时，对一位神秘而迷人的女宾（妮可·基德曼 饰）一见钟情。</p>
+                    <p>在妻子的默许下，哈特ford独自前往纽约寻找这位女子，却意外卷入了一场神秘而危险的派对。随着调查的深入，他发现这个圈子充满了混乱、性爱与禁忌，甚至与多年前好友的失踪案有着千丝万缕的联系。影片通过哈特ford的视角，逐步揭开了一个光鲜亮丽社会表象下的阴暗面。</p>
+                </div>
+                <div class="synopsis-img">
+                    <img src="https://picsum.photos/seed/movieposter/600/400.jpg" alt="电影大开眼戒海报概念图">
+                </div>
+            </div>
+        </section>
+
+        <section id="cast" class="cast-section">
+            <div class="container">
+                <h2 class="section-title">主要演员</h2>
+                <div class="cast-grid">
+                    <div class="cast-card">
+                        <img src="https://picsum.photos/seed/tomcruise/300/300.jpg" alt="汤姆·克鲁斯" class="cast-img">
+                        <div class="cast-name">汤姆·克鲁斯</div>
+                        <div class="cast-role">威廉·哈特ford (Dr. William "Bill" Harford)</div>
+                    </div>
+                    <div class="cast-card">
+                        <img src="https://picsum.photos/seed/nicolekidman/300/300.jpg" alt="妮可·基德曼" class="cast-img">
+                        <div class="cast-name">妮可·基德曼</div>
+                        <div class="cast-role">爱丽丝·哈特ford (Nicole Kidman)</div>
+                    </div>
+                    <div class="cast-card">
+                        <img src="https://picsum.photos/seed/jaredleto/300/300.jpg" alt="朱利安·施纳德" class="cast-img">
+                        <div class="cast-name">朱利安·施纳德</div>
+                        <div class="cast-role">吉米·迪万 (Jimmy Douvan)</div>
+                    </div>
+                    <div class="cast-card">
+                        <img src="https://picsum.photos/seed/sinitta/300/300.jpg" alt="辛蒂塔" class="cast-img">
+                        <div class="cast-name">辛蒂塔</div>
+                        <div class="cast-role">舞厅歌手 (Showgirl)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="analysis container">
+            <h2 class="section-title">深度解析</h2>
+            <ul class="analysis-list">
+                <li class="analysis-item">
+                    <div class="analysis-icon">👁️</div>
+                    <div class="analysis-content">
+                        <h3>标题的隐喻</h3>
+                        <p>“Eyes Wide Shut”意为“大睁双眼”，象征着对真相的渴望与恐惧。影片中多次出现的面具场景，暗示了社交场合中的虚伪与伪装，主角试图看清真相，却只能看到混乱与虚无。</p>
+                    </div>
+                </li>
+                <li class="analysis-item">
+                    <div class="analysis-icon">🎭</div>
+                    <div class="analysis-content">
+                        <h3>梦境与现实的边界</h3>
+                        <p>库布里克运用了大量的超现实主义手法。影片后半段，威廉在酒店走廊的游荡、面具派对上的迷幻景象，都模糊了现实与梦境的界限，表达了潜意识中无法言说的欲望与焦虑。</p>
+                    </div>
+                </li>
+                <li class="analysis-item">
+                    <div class="analysis-icon">💒</div>
+                    <div class="analysis-content">
+                        <h3>婚姻的脆弱性</h3>
+                        <p>影片通过一对看似完美的中产阶级夫妇，探讨了婚姻中信任与激情的消逝。妻子爱丽丝的坦白与丈夫的冒险，揭示了即使是最稳固的关系，也可能在欲望的诱惑下产生裂痕。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题 (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">这是一部恐怖片吗？</div>
+                    <div class="faq-answer">
+                        虽然影片氛围紧张压抑，包含一些惊悚元素，但它主要是一部心理剧情片，而非传统意义上的恐怖片。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">为什么妮可·基德曼在片中大部分时间戴着面具/面罩？</div>
+                    <div class="faq-answer">
+                        这是为了掩盖她当时因鼻窦手术而裸露鼻头的真实情况，也是导演库布里克为了保持角色神秘感的一种艺术处理方式。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">库布里克是在这部电影之后去世的吗？</div>
+                    <div class="faq-answer">
+                        是的，《大开眼戒》是斯坦利·库布里克执导的最后一部电影，他于该片上映后的几个月内去世。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>影视解析</h3>
+            <p>致力于提供高质量的电影资讯与深度影评。</p>
+            <p>&copy; 2023 影视解析网. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <script>
+        // FAQ 交互逻辑
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+                                                                 </html>
