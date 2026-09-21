@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛郎织女下载 - 中国经典民间故事绘本与动画全集</title>
+    <meta name="description" content="牛郎织女下载平台，提供高清中国民间故事绘本、动画短片及有声读物资源。包含牛郎织女完整故事线、神话传说解析及适合儿童与教育场景的数字素材。">
+    <meta name="keywords" content="牛郎织女下载, 牛郎织女绘本, 牛郎织女动画, 中国神话故事, 民间故事资源">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #d2b4de;
+            --accent-color: #f1c40f;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-download {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #732d91;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbf7 0%, #f4ecf7 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .file-size {
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+
+        .btn-link {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            background-color: white;
+        }
+
+        .guide-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .guide-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .guide-content p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .guide-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .guide-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .guide-visual {
+            background-color: #f8f4fc;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .guide-visual img {
+            max-width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f9f9f9;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item.active .faq-question::before {
+            content: '+';
+            color: var(--primary-color);
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-large {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">牛郎织女 <span>故事汇</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#resources">资源下载</a></li>
+                    <li><a href="#guide">使用指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#resources" class="btn-download">立即下载</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>牛郎织女下载</h1>
+                <p>汇集中国四大民间传说之一《牛郎织女》的高清绘本、动画短片及有声读物。适合亲子共读、儿童教育及文化学习，支持多种格式下载。</p>
+                <div class="hero-actions">
+                    <a href="#resources" class="btn-large btn-primary">浏览资源库</a>
+                    <a href="#guide" class="btn-large btn-secondary">查看安装教程</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <div class="container">
+                <h2 class="section-title">精选资源下载</h2>
+                <p class="section-subtitle">为您提供不同格式的数字内容，满足教育、阅读及收藏需求。</p>
+                
+                <div class="resource-grid">
+                    <!-- Resource 1 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <span class="card-tag">绘本 PDF</span>
+                            <img src="https://picsum.photos/seed/nlzz1/400/300" alt="牛郎织女绘本封面">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">《牛郎织女》儿童绘本电子版</h3>
+                            <p class="card-desc">全彩高清PDF格式，包含精美插画与注音文字，适合幼儿园至小学低年级阅读。</p>
+                            <div class="card-footer">
+                                <span class="file-size">约 15 MB</span>
+                                <a href="#" class="btn-link">立即下载 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Resource 2 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <span class="card-tag">动画 MP4</span>
+                            <img src="https://picsum.photos/seed/nlzz2/400/300" alt="牛郎织女动画封面">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">经典动画电影《牛郎织女》</h3>
+                            <p class="card-desc">高清MP4格式，时长45分钟，完整讲述牛郎织女的爱情故事及鹊桥相会情节。</p>
+                            <div class="card-footer">
+                                <span class="file-size">约 450 MB</span>
+                                <a href="#" class="btn-link">立即下载 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Resource 3 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <span class="card-tag">有声书 MP3</span>
+                            <img src="https://picsum.photos/seed/nlzz3/400/300" alt="牛郎织女有声书封面">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">《牛郎织女》睡前故事</h3>
+                            <p class="card-desc">专业播音员录制，适合睡前聆听，语速舒缓，培养孩子想象力。</p>
+                            <div class="card-footer">
+                                <span class="file-size">约 45 MB</span>
+                                <a href="#" class="btn-link">立即下载 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Resource 4 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <span class="card-tag">PPT 课件</span>
+                            <img src="https://picsum.photos/seed/nlzz4/400/300" alt="牛郎织女课件封面">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">小学语文《牛郎织女》教学PPT</h3>
+                            <p class="card-desc">教师备课专用，包含故事背景、人物分析及课后习题，支持PPTX格式。</p>
+                            <div class="card-footer">
+                                <span class="file-size">约 8 MB</span>
+                                <a href="#" class="btn-link">立即下载 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="section guide-section">
+            <div class="container">
+                <div class="guide-container">
+                    <div class="guide-visual">
+                        <img src="https://picsum.photos/seed/nlzz_art/500/350" alt="牛郎织女插画">
+                    </div>
+                    <div class="guide-content">
+                        <h3>如何使用下载资源</h3>
+                        <p>我们提供多种格式的文件，请根据您的设备和使用场景选择合适的下载方式。</p>
+                        <ul class="guide-list">
+                            <li><strong>PDF绘本：</strong>使用Adobe Acrobat Reader或浏览器直接打开，支持打印。</li>
+                            <li><strong>MP4动画：</strong>使用VLC播放器、Windows Media Player或手机自带播放器。</li>
+                            <li><strong>PPT课件：</strong>建议使用Microsoft PowerPoint 2010及以上版本打开。</li>
+                            <li><strong>MP3有声书：</strong>可直接导入手机音乐软件，或使用播放器收听。</li>
+                        </ul>
+                        <div style="margin-top: 20px;">
+                            <a href="#" style="color: var(--primary-color); font-weight: bold;">查看详细使用手册 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <h2 class="section-title">常见问题解答</h2>
+                <p class="section-subtitle">关于文件格式、版权及使用权限的疑问。</p>
+
+                <div class="faq-item">
+                    <div class="faq-question">下载后的文件无法打开怎么办？</div>
+                    <div class="faq-answer">请确保您的设备已安装对应的播放器或阅读软件（如Adobe Reader、VLC等）。如果是压缩包格式，请先使用解压软件（如WinRAR或7-Zip）解压后再打开。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">这些资源是否支持商用？</div>
+                    <div class="faq-answer">本站提供的资源仅供个人学习、教育及家庭娱乐使用。如需商用或公开发布，请联系版权方获取授权。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">下载速度很慢怎么办？</div>
+                    <div class="faq-answer">建议在网络环境较好的情况下下载。如果服务器负载较高，您可以稍后再试或尝试使用下载工具进行多线程下载。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">支持哪些系统平台？</div>
+                    <div class="faq-answer">我们的资源兼容Windows、macOS、Android及iOS等主流操作系统。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 0.9rem; color: #bdc3c7; line-height: 1.8;">
+                        牛郎织女故事汇致力于传播中国传统民间文化，提供优质的数字阅读与教育资源。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#resources">绘本下载</a></li>
+                        <li><a href="#resources">动画下载</a></li>
+                        <li><a href="#guide">使用指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p style="font-size: 0.9rem; color: #bdc3c7;">
+                        分享中国神话故事，传承民族文化。
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 牛郎织女故事汇. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                                                       </html>
