@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="芒果肠粉 - 传统粤式肠粉与热带风味结合的创意美食指南。提供正宗做法教程、店铺推荐、口味解析及食材选购建议，带你领略肠粉与芒果碰撞的独特风味。">
+    <meta name="keywords" content="芒果肠粉, 肠粉做法, 广式早茶, 粤菜美食, 芒果甜品, 肠粉店推荐">
+    <title>芒果肠粉-创意肠粉与芒果甜品风味指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff8c00;
+            --secondary-color: #ffe4b5;
+            --text-dark: #2c3e50;
+            --text-gray: #666;
+            --bg-light: #fdfbf7;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe4b5 100%);
+            padding: 4rem 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .hero-tags {
+            display: inline-flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tag {
+            background: rgba(255, 140, 0, 0.15);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -0.6rem;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .section-more {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Cards Grid */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: #999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #e67e00;
+        }
+
+        /* Recipe Detail Styles */
+        .recipe-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .recipe-steps {
+            counter-reset: step;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-item::before {
+            counter-increment: step;
+            content: counter(step);
+            background: var(--primary-color);
+            color: var(--white);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .step-content p {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+        }
+
+        /* Sidebar Styles */
+        .sidebar-widget {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .flavor-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flavor-list li:last-child {
+            border-bottom: none;
+        }
+
+        .flavor-name {
+            font-weight: 500;
+        }
+
+        .flavor-tag {
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #f0f0f0;
+            color: #666;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+        }
+
+        .faq-answer {
+            padding: 0 1.2rem 1.2rem;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: none;
+            border-top: 1px solid #f5f5f5;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 3rem 20px 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .recipe-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="#" class="logo">
+            🥭 芒果<span>肠粉</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#recipes">经典食谱</a>
+            <a href="#shops">店铺推荐</a>
+            <a href="#ingredients">食材选购</a>
+            <a href="#guide">吃法指南</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>唤醒味蕾的夏日甜点</h1>
+            <p>当滑嫩的广式肠粉遇上香甜的芒果，带来软糯与清甜的完美融合。探索芒果肠粉的独特魅力，从家庭制作到街头寻味。</p>
+            <div class="hero-tags">
+                <span class="tag">#创意肠粉</span>
+                <span class="tag">#广式早茶</span>
+                <span class="tag">#低卡甜品</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            <!-- Featured Recipe -->
+            <section id="recipes">
+                <div class="section-header">
+                    <h2 class="section-title">芒果肠粉制作教程</h2>
+                    <a href="#" class="section-more">查看更多食谱 →</a>
+                </div>
+                <div class="recipe-layout">
+                    <div class="recipe-image">
+                        <img src="https://picsum.photos/seed/mango-rice-paper/600/400" alt="芒果肠粉成品展示" style="width:100%; border-radius:8px;">
+                    </div>
+                    <div class="recipe-steps">
+                        <h3>制作关键步骤</h3>
+                        <p style="margin-bottom:1rem; color:#666;">想要做出皮薄馅足、入口即化的芒果肠粉，需注意米浆的稠度与火候控制。</p>
+                        
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h4>调制米浆</h4>
+                                <p>使用粘米粉、澄粉和木薯粉按特定比例混合，加入适量清水，搅拌至无颗粒状。米浆的浓稠度决定了肠粉皮的厚薄。</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h4>蒸制皮层</h4>
+                                <p>刷油，倒入一勺米浆，摇匀铺平。大火蒸约1-2分钟至表面凝固起泡，揭皮时动作要轻，保持完整不破。</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h4>卷入果肉</h4>
+                                <p>将切好的芒果条放在蒸好的皮中间，利用刮板辅助，从下往上卷成圆柱形。淋上特制的芒果酱或炼乳即可。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Recommendations -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">热门吃法推荐</h2>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/mango-syrup/400/300" alt="芒果酱淋汁" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">芒果酱淋汁法</h3>
+                            <p class="card-desc">将芒果果肉打成泥，加入少许糖熬制浓稠酱汁。淋在卷好的肠粉表面，色泽金黄诱人，风味浓郁。</p>
+                            <div class="card-meta">
+                                <span>难度：中等</span>
+                                <a href="#" class="btn" style="padding:4px 12px; font-size:0.8rem;">详情</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/mango-milk/400/300" alt="芒果牛奶底" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">芒果牛奶底</h3>
+                            <p class="card-desc">在米浆中加入少量牛奶，蒸出的肠粉带有奶香。搭配新鲜芒果粒，口感更加丰富立体。</p>
+                            <div class="card-meta">
+                                <span>难度：简单</span>
+                                <a href="#" class="btn" style="padding:4px 12px; font-size:0.8rem;">详情</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/mango-yogurt/400/300" alt="酸奶佐餐" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">酸奶佐餐</h3>
+                            <p class="card-desc">适合早餐或轻食。将冷吃肠粉切块，淋上希腊酸奶，撒上坚果碎，清新解腻。</p>
+                            <div class="card-meta">
+                                <span>难度：简单</span>
+                                <a href="#" class="btn" style="padding:4px 12px; font-size:0.8rem;">详情</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Ingredient Guide -->
+            <section id="ingredients">
+                <div class="section-header">
+                    <h2 class="section-title">食材选购指南</h2>
+                </div>
+                <div class="grid-3">
+                    <div style="background:#fff; padding:1.5rem; border-radius:8px; border:1px solid #eee;">
+                        <h4 style="color:var(--primary-color); margin-bottom:0.5rem;">选择芒果</h4>
+                        <p style="font-size:0.9rem; color:#666;">建议选择果肉厚实、纤维少的热带芒果（如台农香芒或金煌芒），果香浓郁且甜度高。</p>
+                    </div>
+                    <div style="background:#fff; padding:1.5rem; border-radius:8px; border:1px solid #eee;">
+                        <h4 style="color:var(--primary-color); margin-bottom:0.5rem;">米浆比例</h4>
+                        <p style="font-size:0.9rem; color:#666;">粘粉与澄粉的比例约为3:1，木薯粉增加透明度和韧性，是肠粉皮Q弹的关键。</p>
+                    </div>
+                    <div style="background:#fff; padding:1.5rem; border-radius:8px; border:1px solid #eee;">
+                        <h4 style="color:var(--primary-color); margin-bottom:0.5rem;">刷油技巧</h4>
+                        <p style="font-size:0.9rem; color:#666;">使用玉米油或花生油刷盘，油量不宜过多，以免肠粉粘连；油温微热时刷油效果最佳。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="guide">
+                <div class="section-header">
+                    <h2 class="section-title">常见问题 (FAQ)</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">芒果肠粉是甜的吗？</div>
+                        <div class="faq-answer">传统的广式肠粉是咸鲜口味的，主要使用酱油和肉碎。但“芒果肠粉”通常指创意甜品，使用芒果果肉和酱汁，口感偏甜。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">米浆不透明怎么办？</div>
+                        <div class="faq-answer">米浆不够透明通常是因为澄粉（小麦淀粉）比例过低。建议适当增加澄粉的比例，或检查是否混合均匀。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何让肠粉皮更薄？</div>
+                        <div class="faq-answer">控制米浆的倾倒量是关键，只需薄薄一层即可。蒸制时间不宜过长，表面出现大泡即表示熟透。</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">肠粉流派大比拼</h3>
+                <ul class="flavor-list">
+                    <li>
+                        <span class="flavor-name">广式肠粉</span>
+                        <span class="flavor-tag">米浆滑嫩</span>
+                    </li>
+                    <li>
+                        <span class="flavor-name">潮汕肠粉</span>
+                        <span class="flavor-tag">馅料丰富</span>
+                    </li>
+                    <li>
+                        <span class="flavor-name">布拉肠粉</span>
+                        <span class="flavor-tag">手工拉制</span>
+                    </li>
+                    <li>
+                        <span class="flavor-name">越南河粉</span>
+                        <span class="flavor-tag">西式风格</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">季节推荐</h3>
+                <p style="font-size:0.9rem; color:#666; margin-bottom:1rem;">夏季食用芒果肠粉可清热解暑，搭配冰镇酸奶效果更佳。</p>
+                <div style="display:flex; gap:10px;">
+                    <img src="https://picsum.photos/seed/ice-cream/80/80" style="border-radius:4px;">
+                    <img src="https://picsum.photos/seed/mango-fruit/80/80" style="border-radius:4px;">
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>关于芒果肠粉</h4>
+            <p style="font-size:0.9rem; color:#bdc3c7; line-height:1.6;">专注于分享广式肠粉与热带水果的创意搭配，致力于推广传统粤式美食文化。</p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#recipes">制作教程</a></li>
+                <li><a href="#shops">店铺推荐</a></li>
+                <li><a href="#ingredients">食材百科</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>联系方式</h4>
+            <ul>
+                <li><a href="#">投稿建议</a></li>
+                <li><a href="#">商务合作</a></li>
+                <li><a href="#">关注我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 芒果肠粉指南. All rights reserved.
+    </div>
+</footer>
+
+<script>
+    // FAQ Accordion Logic
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
