@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橙杖任务-魔兽世界经典怀旧服高效刷金与任务攻略指南</title>
+    <meta name="description" content="橙杖任务全流程攻略，包含祖尔格拉布、纳克萨玛斯、海山等阶段详细解析，高效刷金技巧、BOSS站位及团队配合指南。">
+    <meta name="keywords" content="橙杖任务, 魔兽世界, 怀旧服, 祖尔格拉布, 纳克萨玛斯, 刷金, 装备攻略">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d88b00;
+            --primary-hover: #b57600;
+            --bg-dark: #1a1a1d;
+            --bg-card: #252529;
+            --text-main: #f0f0f0;
+            --text-sub: #a0a0a0;
+            --border-color: #3e3e42;
+            --font-stack: "Microsoft YaHei", "Heiti SC", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(26, 26, 29, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .nav-btn {
+            background-color: var(--primary-color);
+            color: #fff !important;
+            padding: 6px 16px;
+            border-radius: 4px;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(to bottom, rgba(26, 26, 29, 0.3), var(--bg-dark)), 
+                        url('https://picsum.photos/seed/wowhero/1600/600') center/cover no-repeat;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-sub);
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-main);
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            border-color: var(--primary-color);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #000;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            margin-bottom: 16px;
+        }
+
+        .card-link {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Guide Section */
+        .guide-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .guide-content {
+            background-color: var(--bg-card);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        .step-item::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: bold;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .step-text {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-widget {
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .stat-label {
+            color: var(--text-sub);
+        }
+
+        .stat-value {
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background-color: rgba(216, 139, 0, 0.1);
+            border-left: 3px solid var(--primary-color);
+            padding: 12px;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #ffd700;
+        }
+
+        /* FAQ */
+        .faq-section {
+            margin-top: 60px;
+        }
+
+        .faq-item {
+            background-color: var(--bg-card);
+            margin-bottom: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        .faq-answer-inner {
+            padding: 20px;
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+                gap: 16px;
+            }
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>橙杖任务</span>攻略网
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#stages">阶段攻略</a></li>
+                    <li><a href="#gold">高效刷金</a></li>
+                    <li><a href="#guide">新手指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#" class="nav-btn">加入公会</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>探索无尽奥术：橙杖任务全解析</h1>
+            <p>从祖尔格拉布到纳克萨玛斯，从海山到太阳井。本站提供最详尽的魔兽世界经典怀旧服橙杖任务流程、BOSS机制详解及团队配合技巧。</p>
+            <div class="cta-group">
+                <a href="#stages" class="btn btn-primary">开始任务</a>
+                <a href="#gold" class="btn btn-outline">查看刷金技巧</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Key Features / Stages Preview -->
+        <section id="stages">
+            <div class="section-title">
+                <span>核心任务阶段</span>
+                <a href="#" style="font-size: 0.9rem; color: var(--primary-color);">查看全部 &rarr;</a>
+            </div>
+            <div class="grid-layout">
+                <article class="card">
+                    <img src="https://picsum.photos/seed/zg/400/250" alt="祖尔格拉布" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">第一阶段</span>
+                        <h3 class="card-title">祖尔格拉布：丛林探险</h3>
+                        <p class="card-desc">击杀四个祖尔格拉布首领，获取绿龙鳞片与饰品。这是橙杖的基础，也是刷金效率最高的阶段。</p>
+                        <a href="#" class="card-link">阅读详细攻略 &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/naxx/400/250" alt="纳克萨玛斯" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">第二阶段</span>
+                        <h3 class="card-title">纳克萨玛斯：天灾堡垒</h3>
+                        <p class="card-desc">开启时光徽记，进入诺森德副本。攻略微光之桥与灵体BOSS，获取核心材料。</p>
+                        <a href="#" class="card-link">阅读详细攻略 &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/hyjal/400/250" alt="海加尔山" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">第三阶段</span>
+                        <h3 class="card-title">海加尔山：最终试炼</h3>
+                        <p class="card-desc">通过海山日常获取火焰碎片，召唤阿克蒙德。这是制作橙杖的最后一步。</p>
+                        <a href="#" class="card-link">阅读详细攻略 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Detailed Guide -->
+        <section id="guide" class="guide-container">
+            <div class="guide-content">
+                <h2 style="margin-bottom: 24px; font-size: 1.5rem;">高效刷金与任务流程详解</h2>
+                
+                <ul class="step-list">
+                    <li class="step-item">
+                        <h4 class="step-title">准备阶段：组建高效团队</h4>
+                        <p class="step-text">建议由2-3个治疗、2-3个坦克和6-8个输出组成。治疗和坦克需有丰富的副本经验，因为BOSS战容错率极低。优先选择拥有“屠龙者”成就的公会或团队，能显著提高效率。</p>
+                    </li>
+                    <li class="step-item">
+                        <h4 class="step-title">祖尔格拉布：饰品掉落与分赃</h4>
+                        <p class="step-text">击杀格鲁尔后，魔杖会掉落。此时需进行公平分赃（通常按职业需求或随机抽奖）。绿龙BOSS会掉落大量金币和材料，建议安排专人（如术士）负责拉怪和AOE清场，最大化金币收益。</p>
+                    </li>
+                    <li class="step-item">
+                        <h4 class="step-title">时光徽记：纳克萨玛斯机制</h4>
+                        <p class="step-text">在纳克萨玛斯中，关键在于控制“微光之桥”的怪物数量。保持双坦克拉住所有小怪，利用法术打断和控制技能，确保能在限定时间内清理完所有精英怪并击杀灵体BOSS，否则任务会失败。</p>
+                    </li>
+                    <li class="step-item">
+                        <h4 class="step-title">海加尔山：火焰碎片收集</h4>
+                        <p class="step-text">完成海山日常任务，注意查看每日任务列表中的火焰碎片任务。通常需要连续完成多日日常才能凑齐制作材料。在此阶段，团队配合的默契度决定了任务完成的进度。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">任务收益预估</h3>
+                    <div class="highlight-box">
+                        单次副本金币收益：约 500-800G
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">材料成本</span>
+                        <span class="stat-value" style="color: #ff6b6b;">约 1500G</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">成品价值</span>
+                        <span class="stat-value" style="color: #51cf66;">约 3000G+</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">所需时间</span>
+                        <span class="stat-value">约 4-6 小时</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">必备插件推荐</h3>
+                    <ul style="list-style: none; font-size: 0.9rem; color: var(--text-sub);">
+                        <li style="margin-bottom: 8px;">• <strong>QuestHelper</strong>：任务追踪优化</li>
+                        <li style="margin-bottom: 8px;">• <strong>DraenorPerfect</strong>：海山日常优化</li>
+                        <li style="margin-bottom: 8px;">• <strong>DBM</strong>：BOSS计时器</li>
+                        <li>• <strong>HandyNotes</strong>：标记关键NPC</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2 class="section-title" style="font-size: 1.5rem;">常见问题解答 (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">橙杖任务可以一个人完成吗？</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        不建议。虽然理论上可以在副本中单刷，但纳克萨玛斯和海加尔山的机制非常复杂，对装备和操作要求极高。组队是完成橙杖任务的主流且最安全的方式。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">刷金的时候如何避免被击杀？</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        在祖尔格拉布和纳克萨玛斯中，保持良好的站位至关重要。避免仇恨失控，及时使用保命技能。术士职业在刷金阶段优势巨大，建议带一个术士作为主力输出。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">海加尔山的火焰碎片有什么用？</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        火焰碎片是制作橙杖“埃辛诺斯战刃”的关键材料。你需要通过完成每日任务来收集这些碎片，通常需要花费数周时间才能集齐。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 橙杖任务攻略网. All Rights Reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem; color: #666;">本站内容仅供游戏爱好者参考，所有游戏知识产权归暴雪娱乐所有。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
