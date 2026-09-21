@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="生化危机7结局详细解析与彩蛋揭秘。深度解析伊森·温特斯的最终命运、贝克家族真相、以及伊芙琳的结局走向，带你全面了解生化危机7的剧情脉络与隐藏含义。">
+    <meta name="keywords" content="生化危机7结局,生化危机7剧情,伊森温特斯,贝克家族,伊芙琳结局,生化危机7隐藏彩蛋">
+    <title>生化危机7结局-剧情深度解析与隐藏彩蛋揭秘</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f0f13;
+            --card-bg: #1a1a20;
+            --text-main: #e0e0e0;
+            --text-sub: #a0a0a0;
+            --accent-color: #8a2be2; /* 蓝紫色调 */
+            --accent-hover: #9d4edd;
+            --danger-color: #ff4757;
+            --border-color: #2d2d35;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .section-header p {
+            color: var(--text-sub);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(15, 15, 19, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/re7hero/1920/1080') no-repeat center center/cover;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Timeline / Story Flow */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: -8px;
+            background-color: var(--bg-color);
+            border: 3px solid var(--accent-color);
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -8px;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .content h3 {
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        /* Conclusion Cards */
+        .conclusion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent-color);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: grayscale(20%);
+            transition: filter 0.3s;
+        }
+
+        .card:hover .card-img {
+            filter: grayscale(0%);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .card-text {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background-color: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            padding: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: transparent;
+            color: #fff;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: rgba(255,255,255,0.03);
+        }
+
+        .faq-answer {
+            padding: 0 1.2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--text-sub);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.2rem 1.2rem 1.2rem;
+            max-height: 200px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050507;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 1rem;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::after {
+                left: 23px;
+            }
+
+            .right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Bio<span>Hazard</span> Guide</div>
+            <nav>
+                <ul>
+                    <li><a href="#story">剧情脉络</a></li>
+                    <li><a href="#conclusion">结局解析</a></li>
+                    <li><a href="#evelyn">伊芙琳真相</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>生化危机7结局<br>深度解析与隐藏彩蛋</h1>
+                <p>伊森·温特斯的最终命运如何？贝克家族的悲剧起源是什么？伊芙琳的结局意味着什么？带你揭开《生化危机7：生化危机》的最终真相。</p>
+                <a href="#conclusion" class="btn">查看详细结局</a>
+            </div>
+        </section>
+
+        <!-- Story Timeline -->
+        <section id="story" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>剧情脉络回顾</h2>
+                    <p>在深入结局之前，我们需要梳理伊森在路易斯安那沼泽经历的关键转折点。</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h3>1. 寻妻之旅</h3>
+                            <p class="card-text">伊森·温特斯为了寻找失踪的妻子米娅，独自进入维罗妮卡·贝克经营的庄园。他遭遇了杰克、玛莎等贝克家族成员的疯狂袭击，并最终被杰克的“意念”所控制。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="content">
+                            <h3>2. 意识觉醒与背叛</h3>
+                            <p class="card-text">在庄园深处，伊森发现米娅其实已被伊芙琳寄生，且米娅为了保护伊森杀死了杰克。伊森在米娅的“意念”指引下，最终杀死了杰克，重获自我意识。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h3>3. 与伊芙琳的对决</h3>
+                            <p class="card-text">伊森在庄园深处找到了米娅和伊芙琳。面对拥有超自然力量且极度不稳定的伊芙琳，伊森在米娅的牺牲下，利用新获得的力量与伊芙琳展开殊死搏斗。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="content">
+                            <h3>4. 最终的选择</h3>
+                            <p class="card-text">在最终的战斗中，伊森为了保护幸存者（埃达·王和米娅的遗体），做出了关键选择，直接导致了游戏的最终结局。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Conclusion Analysis -->
+        <section id="conclusion" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>结局深度解析</h2>
+                    <p>伊森的结局并非简单的“好人有好报”，而是充满了牺牲与无奈。</p>
+                </div>
+
+                <div class="conclusion-grid">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/evelyn/400/250" alt="伊芙琳结局" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">伊芙琳的最终命运</h3>
+                            <p class="card-text">伊芙琳在战斗中被伊森击败，但她并未立即死亡。在游戏的最后，埃达·王（Ada Wong）出现，将伊芙琳装进一个密封箱中带走。伊芙琳的命运暂时悬而未决，但她所造成的恐怖与混乱已被暂时遏制。</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/mia/400/250" alt="米娅牺牲" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">米娅的牺牲</h3>
+                            <p class="card-text">为了阻止伊芙琳的进一步扩散并保护伊森，米娅（此时已完全寄生化）选择牺牲自己。她用自己的身体作为容器，将伊芙琳困住，最终与伊芙琳一同坠入深渊。这一幕是伊森心中永远的痛。</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/ethan/400/250" alt="伊森结局" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">伊森的存活与代价</h3>
+                            <p class="card-text">伊森在游戏结局中幸存了下来。然而，他的身体已经严重受损，尤其是手臂，已经完全被真菌寄生。这预示着他无法再像以前那样进行激烈的战斗，只能依靠科技辅助生存。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Secrets -->
+        <section id="evelyn" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>隐藏彩蛋与深层含义</h2>
+                    <p>关于伊芙琳的身世、米娅的真实身份以及伊森为何能存活。</p>
+                </div>
+                
+                <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--accent-color);">
+                    <h3 style="color: #fff; margin-bottom: 1rem;">米娅的真实身份</h3>
+                    <p style="color: var(--text-sub); margin-bottom: 1rem;">
+                        玩家在游戏中通过文件拼凑出的真相是：米娅并非普通的感染者，而是伊芙琳的“容器”。她是伊芙琳唯一能够信任的人类，也是伊芙琳力量的源泉。伊芙琳寄生米娅并非出于恶意，而是因为米娅承诺会永远陪伴她，这种情感纽带在极端的病毒作用下扭曲成了寄生关系。
+                    </p>
+                    <h3 style="color: #fff; margin-bottom: 1rem;">伊森的手臂</h3>
+                    <p style="color: var(--text-sub);">
+                        伊森在结局中手臂上的真菌是他在之前的战斗中多次感染的残留。在最终决战前，米娅曾用强效药物试图治疗他，但并未完全清除。这根手臂实际上成为了伊森与伊芙琳力量连接的媒介，也让他拥有了足以对抗伊芙琳的怪力。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="container" style="max-width: 800px;">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">伊森在生化危机7结局中死了吗？</div>
+                    <div class="faq-answer">
+                        <p>伊森在表面上幸存了下来，但他被证实患有严重的真菌感染，手臂已经部分坏死。虽然游戏没有明确说明他何时死亡，但根据《生化危机8》的剧情预告，他的手臂感染已经扩散，且他在后续故事中处于昏迷或极度虚弱的状态。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">埃达·王带走了伊芙琳吗？</div>
+                    <div class="faq-answer">
+                        <p>是的，在结局CG中，埃达·王从伊森手中救下了伊芙琳，并将她装进了一个特制的金属箱中带走。这意味着伊芙琳并没有死，她可能会在《生化危机8》或其他续作中重新出现。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">米娅真的死了吗？</div>
+                    <div class="faq-answer">
+                        <p>在游戏结局中，米娅与伊芙琳一同坠入深渊，伊森在水中只找到了伊芙琳的头颅和伊芙琳的手臂，没有找到米娅的尸体。这通常被视为米娅的死亡，但也留下了悬念。在后续剧情中，米娅被证实已经死亡（在《生化危机8》中由医生确认）。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">伊芙琳为什么会控制杰克？</div>
+                    <div class="faq-answer">
+                        <p>伊芙琳拥有强大的精神控制能力。杰克虽然是她的父亲，但他对伊芙琳的照顾并不完美，甚至有些粗暴。伊芙琳为了报复杰克对她的管教，利用寄生能力控制了他的思想，这也是玩家在游戏中需要面对的“杰克”是伊芙琳意志体现的原因。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">隐私政策</a>
+                <a href="#">免责声明</a>
+                <a href="#">联系站长</a>
+            </div>
+            <p class="copyright">&copy; 2023 BioHazard Guide. All rights reserved. 本站内容仅供玩家交流与剧情解析，非官方渠道。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
